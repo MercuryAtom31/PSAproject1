@@ -1,0 +1,9 @@
+ALLOWED ME TO DISPLAY THE DIVS SIDE BY SIDE 
+INSTEAD OF THE DEFAULT ONE ON TOP OF THE OTHER:
+display: inline-block; 
+
+
+The querySelector() method returns the first element 
+that matches a CSS selector.
+To return all matches (not only the first), 
+use the querySelectorAll() instead.
