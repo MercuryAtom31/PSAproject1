@@ -37,6 +37,18 @@ const months = [
   NOTICE! If I want to select the month of May, I need to write 4
   instead of 5 (being the month number). Because months are 0 based.
   */
+let img1=document.getElementById("alian");
+img1.addEventListener("mouseover",function(){changeImg("Images/aliensImage2.jpg")}, false );
+img1.addEventListener("mouseout",function(){changeImg("Images/ufoInvasion640x477.jpg")}, false );
+
+
+
+function changeImg(imageName){
+
+  img1.setAttribute("src", imageName);
+
+}
+
   let futureDate = new Date(2022, 6, 24, 17, 30, 0);
   console.log(futureDate);
 
