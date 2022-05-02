@@ -58,11 +58,17 @@ const deadline = document.querySelector(".deadline");
   instead of 5 (being the month number). Because months are 0 based.
   */
 const items = document.querySelectorAll(".deadline-format h4");
+let tempDate = new Date();
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth();
+let tempDay = tempDate.getDate();
 /**
+ * 
  * To get the current date only, use the date() method
  * without arguments.
  */
-let futureDate = new Date(2020, 3, 24, 11, 30, 0);
+// months are ZERO index based;
+const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
 
 
 const year = futureDate.getFullYear();
@@ -78,7 +84,7 @@ const weekday = weekdays[futureDate.getDay()];
 
 //console.log(months[month]);
 
-alien1.textContent = `giveway ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}am`;
+alien1.textContent = `Possibility to be rescued ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}am`;
 // Future time in ms.
 const futureTime = futureDate.getTime();
 
@@ -92,11 +98,62 @@ console.log(t);
 //1hr = 60minutes
 //1d = 24hrs
 
+//Values in ms (how many milliseconds are in one day).
+const oneDay = 24 * 60 * 60 * 1000;
+//How many milliseconds are in an hour.
+const oneHour = 60 * 60 * 1000;
+//How many milliseconds are in a minute.
+const oneMinute = 60 * 1000;
+//Calculating all values.
+let days = t / oneDay;
+/*
+  The Math.floor() function returns 
+  the largest integer less than or equal to a given number.
+  e.g.
+  console.log(Math.floor(5.95));
+ expected output: 5
+
+ console.log(Math.floor(5.05));
+ expected output: 5
+
+ console.log(Math.floor(5));
+ expected output: 5
+
+ console.log(Math.floor(-5.05));
+ expected output: -6
+*/
+days = Math.floor(days);
+let hours = Math.floor((t % oneDay) / oneHour);
+let minutes = Math.floor((t % oneHour) / oneMinute);
+let seconds = Math.floor((t % oneMinute) / 1000);
+
+//set values arrays.
+const values = [days, hours, minutes, seconds];
+
+function format (item){
+  if (item < 10){
+    return (item = `0${item}`);
+  }
+  return item;
 }
 
+items.forEach(function(item, index){
+  item.innerHTML = values[index];
+});
+
+if (t < 0) {
+  clearInterval(countdown);
+  deadline.innerHTML = `<h4 class="expired">sorry, aliens have arrived!</h4>`;
+}
+
+}
+
+//countdown.
+let countdown = setInterval(getRemainingTime, 1000);
+//Set initial values.
 getRemainingTime();
 
 
-//Stopped video at 5:30:30
+//5:40:30
 
 //giveaway = alien1. 
