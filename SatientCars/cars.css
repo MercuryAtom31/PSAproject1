@@ -1,0 +1,11 @@
+body{
+    background-image: url(Images/alley-day.jpg);
+}
+
+.wrapper{
+    display: block;
+    margin-top:75%;
+    margin-left: none;
+    margin-right: none;
+    background-color: aliceblue;
+}
