@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- Styles -->
     <link rel="stylesheet" href="aliens.css" />
+    <link rel="stylesheet" href="aliens2.css" />
   </head>
   <body>
     <!--Sticky navigation bar -->
@@ -105,11 +106,129 @@
     </section>
 
     <section>
-      <img src="Images/logoPSA.jpg" />
+      <!-- <img src="Images/logoPSA.jpg" /> -->
+      <div class="div-one">
+        <h1>Please, take the quiz to access your survival rate</h1>
+        <form action="">
+          <p>1. When is the alien invasion take place?</p>
+          <p>
+            <input
+              type="radio"
+              name="question1"
+              value="a"
+              onclick="recordAnswers(1,'a')"
+            /> December 7th 2022<br />
+            
+            <input
+              type="radio"
+              name="question1"
+              value="b"
+              onclick="recordAnswers(1,'b')"
+            /> July 1st 2022<br />
+            <input
+              type="radio"
+              name="question1"
+              value="c"
+              onclick="recordAnswers(1,'c')"
+            /> May 14th 2022 <!-- correct answer -->
+          </p>
+    
+          <p>2. What is the name of the aliens invading Earth?</p>
+          <p>
+            <input
+              type="radio"
+              name="question2"
+              value="a"
+              onclick="recordAnswers(2,'a')"
+            /> Earthcrushers<br />
+            <input
+              type="radio"
+              name="question2"
+              value="b"
+              onclick="recordAnswers(2,'b')"
+            /> Adzoas<br /><!-- correct answer -->
+            <input
+              type="radio"
+              name="question2"
+              value="c"
+              onclick="recordAnswers(2,'c')"
+            /> Earthlovers
+          </p>
+          <p>3. What is the name of the NGO you must contact for more information about the aliens?</p>
+          <p>
+            <input
+              type="radio"
+              name="question3"
+              value="a"
+              onclick="recordAnswers(3,'a')"
+            /> Occupy Mars<br />
+            <input
+              type="radio"
+              name="question3"
+              value="b"
+              onclick="recordAnswers(3,'b')"
+            /> Alien Lovers<br /><!-- correct answer -->
+            <input
+              type="radio"
+              name="question3"
+              value="c"
+              onclick="recordAnswers(3,'c')"
+            /> Alien Allies
+          </p>
+          <p>
+            4. What is the name of the aliens' leader?
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="question4"
+              value="a"
+              onclick="recordAnswers(4,'a')"
+            /> Ronaldo<br />
+            <input
+              type="radio"
+              name="question4"
+              value="b"
+              onclick="recordAnswers(4,'b')"
+            /> Ozanka<br /><!-- correct answer -->
+            <input
+              type="radio"
+              name="question4"
+              value="c"
+              onclick="recordAnswers(4,'c')"
+            /> Onana
+          </p>
+          <p>5. Would you be willing to welcome an alien family at home?</p>
+          <p>
+            <input
+              type="radio"
+              name="question5"
+              value="a"
+              onclick="recordAnswers(5,'a')"
+            /> Yes<br /><!-- correct answer -->
+            <input
+              type="radio"
+              name="question5"
+              value="b"
+              onclick="recordAnswers(5,'b')"
+            /> No<br />
+            <input
+              type="radio"
+              name="question5"
+              value="c"
+              onclick="recordAnswers(5,'c')"
+            /> Not sure
+          </p>
+        </form>
+    
+        <button onclick="score()">Click for checking you survival rate</button>
+      </div>
+
     </section>
  
     <!--Javascript-->
     <script src="aliens.js"></script>
+    <script src="aliens2.js"></script>
   </body>
 </html>
 <!-- 
