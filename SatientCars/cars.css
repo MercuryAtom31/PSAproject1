@@ -1,11 +1,18 @@
 body{
     background-image: url(Images/alley-day.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin:0;
 }
 
-.wrapper{
+#wrapper{
     display: block;
     margin-top:75%;
-    margin-left: none;
-    margin-right: none;
+    align-items: center;
     background-color: aliceblue;
+    color:black;
+}
+
+#part1{
+    text-align: center;
 }
