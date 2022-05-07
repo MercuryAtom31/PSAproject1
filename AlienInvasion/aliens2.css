@@ -1,4 +1,15 @@
-.div-one{
+
+.section-two {
+
     background-color: antiquewhite;
     text-align: center;
+    padding: 90px;
+}
+
+.div-section-three {
+
+    background-color:aliceblue;
+    text-align: center;
+    padding: 90px;
+    
 }
