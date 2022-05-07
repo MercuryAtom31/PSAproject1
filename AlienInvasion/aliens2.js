@@ -24,7 +24,7 @@ function score() {
  * Text appear and disappear script.
  */
 
- function display(idName) {
+function display(idName) {
   let team = document.getElementById(idName);
   team.style.display = "block";
 }
@@ -57,4 +57,36 @@ el3.addEventListener("mouseover", function () {
 });
 el3.addEventListener("mouseout", function () {
   hide("thirdAddressID");
+});
+
+/**
+ * Changing text color.
+ */
+
+const div = document.getElementById("changecolor");
+
+div.style.color = "red";
+
+/**
+ * Video script.
+ */
+
+const btn = document.querySelector(".switch-btn");
+const video = document.querySelector(".video-container");
+
+btn.addEventListener("click", function () {
+  if (!btn.classList.contains("slide")) {
+    btn.classList.add("slide");
+    video.pause();
+  } else {
+    btn.classList.remove("slide");
+    video.play();
+  }
+});
+
+// preloader
+const preloader = document.querySelector(".preloader");
+
+window.addEventListener("load", function () {
+  preloader.classList.add("hide-preloader");
 });
