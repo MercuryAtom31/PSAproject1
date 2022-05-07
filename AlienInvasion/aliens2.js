@@ -35,26 +35,26 @@ function hide(idName) {
 }
 
 //Adding the event listeners of each function.
-let el1 = document.getElementById("padres");
+let el1 = document.getElementById("firstAddress");
 el1.addEventListener("mouseover", function () {
-  display("padresID");
+  display("firstAddressID");
 });
 el1.addEventListener("mouseout", function () {
-  hide("padresID");
+  hide("firstAddressID");
 });
 
-let el2 = document.getElementById("yankees");
+let el2 = document.getElementById("secondAddress");
 el2.addEventListener("mouseover", function () {
-  display("yankeesID");
+  display("secondAddressID");
 });
 el2.addEventListener("mouseout", function () {
-  hide("yankeesID");
+  hide("secondAddressID");
 });
 
-let el3 = document.getElementById("redsox");
+let el3 = document.getElementById("thirdAddress");
 el3.addEventListener("mouseover", function () {
-  display("redsoxID");
+  display("thirdAddressID");
 });
 el3.addEventListener("mouseout", function () {
-  hide("redsoxID");
+  hide("thirdAddressID");
 });

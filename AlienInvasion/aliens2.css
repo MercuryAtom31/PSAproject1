@@ -10,6 +10,11 @@
 
     background-color:aliceblue;
     text-align: center;
-    padding: 90px;
+    padding: 100px;
     
+}
+
+.collapsed{
+
+    padding: 10px;
 }
