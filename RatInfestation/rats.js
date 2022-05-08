@@ -23,7 +23,7 @@ element.insertBefore(para,child);
 
 
 function hideButton(){
-    var x = document.getElementsByClassName("allCounter");
+    var x = document.getElementById("allCounter");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
