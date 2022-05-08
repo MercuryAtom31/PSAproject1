@@ -63,9 +63,8 @@ el3.addEventListener("mouseout", function () {
  * Changing text color.
  */
 
-const div = document.getElementById("changecolor");
 
-div.style.color = "red";
+
 
 /**
  * Video script.
@@ -85,8 +84,41 @@ btn.addEventListener("click", function () {
 });
 
 // preloader
-const preloader = document.querySelector(".preloader");
+// const preloader = document.querySelector(".preloader");
 
-window.addEventListener("load", function () {
-  preloader.classList.add("hide-preloader");
-});
+// window.addEventListener("load", function () {
+//   preloader.classList.add("hide-preloader");
+// });
+
+
+/**
+ * Table script.
+ */
+
+//The 5 percent tax on the selection.
+const tax = 5;
+
+let totalPriceTaxIN = 0;
+
+//Function calculating everything.
+function calculate() {
+  let totalPriceOfSelectedElements = document.getElementsByTagName("input");
+
+  for (let i = 0; i < totalPriceOfSelectedElements.length; i++) {
+    if (totalPriceOfSelectedElements[i].checked) {
+      totalPriceTaxIN += parseFloat(totalPriceOfSelectedElements[i].value) / 100;
+
+      let changingContent = document.getElementsByTagName("td");
+      changingContent[1].textContent = "$" + totalPriceTaxIN.toFixed(2);
+      changingContent[3].textContent = "$" + tax;
+      changingContent[5].textContent = "$" + (totalPriceTaxIN + tax).toFixed(2);
+    }
+  }
+}
+
+
+/**
+ * Contact information script.
+ */
+
+

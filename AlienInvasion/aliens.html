@@ -229,8 +229,8 @@
     <section>
 
       <div class="div-section-three">
-        <h1>Evacuation Pick-Up Locations</h1>
-        <h3>Hover Over an Evacuation Pick-Up Location to show their Address.</h3>
+        <h2>Evacuation Pick-Up Locations</h2>
+        <h3  class="changecolor">Hover Over an Evacuation Pick-Up Location to show their Address.</h3>
         <nav class="nav">
           <a
             href="#"
@@ -256,12 +256,12 @@
     
           <a
             href="#"
-            id="thirdAddress">THIRD ADDRESS:</a
+            id="thirdAddress" class="changecolor">THIRD ADDRESS:</a
           >
 
     
           <div class="collapsed" id="thirdAddressID">
-            <p id="changecolor">POLICE STATION OF LAVAL</p>
+            <p>POLICE STATION OF LAVAL</p>
             <p>5577 Des Laurentides, Laval QC H7K 2K4</p>
           </div>
         </nav>
@@ -272,9 +272,57 @@
 
     <!-- 
       
-      To do list html 
+      Table html 
     
     -->
+
+    <article class="article">
+      <div class="blur-image">
+      <h2>Essential Survival Kit Items You Can’t Live Without</h2>
+      <form>
+         <input type="checkbox" id="item1" value="2999" />
+         <label for="item1">Fire-starter Kit ($29.99)</label>
+         <input type="checkbox" id="item2" value="3999" />
+         <label for="item2">Water Purification Kit ($39.99)</label>
+         <input type="checkbox" id="item3" value="1799" />
+         <label for="item3">First Aid Supplies ($17.99)</label>
+         <input type="checkbox" id="item4" value="10099" />
+         <label for="item4">Signaling Equipment ($100.99)</label>
+         <input type="checkbox" id="item5" value="1499" />
+         <label for="item5">Emergency Thermal Blanket ($14.99)</label>
+         <input type="button" value="Calculate" id="sButton" onClick="calculate()" />
+		 
+      </form>
+      <table>
+         <colgroup>
+            <col class="label" />
+            <col class="amount" />
+         </colgroup>
+         <tbody>
+            <tr>
+               <td>Item total</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td>Tax</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td>Total with tax</td>
+               <td>$0.00</td>
+            </tr>
+         </tbody>
+      </table>
+    </div>
+   </article>
+
+       <!-- 
+      
+      Table html 
+    
+    -->
+
+
 
 
       <!-- 
