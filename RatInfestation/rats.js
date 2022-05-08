@@ -2,7 +2,7 @@ let sub1 = document.getElementById("subt1");
 sub1.style.textDecoration = "underline";
 
 function updated() {
-    var count= document.getElementById("counter");
+    var count = document.getElementById("counter");
     count.innerHTML=++upto;
     if(upto===185490)
     {
