@@ -6,23 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Style sheet-->
     <link rel="stylesheet" href="cars.css" />
-    <title>Document</title>
+    <title>PSA - Sentient Cars</title>
 </head>
 <body>
     
-        <header>
-            <input type="button" value="Click to change page mode" onclick="change()"/>
-        </header>
-        <div id="wrapper">
+    <header>
+        <ul>
+            <li><a href="AlienInvasion/homepage.html">Home</a></li>
+            <li><a href="RatInfestation/rats.html">Rat Infestation</a></li>
+            <li><a href="contact.asp">Sentient Cars</a></li>
+            <li><a href="about.asp">Alien Invasion</a></li>
+        </ul>
+    </header>
 
+    <div id="wrapper">
+    
         <div id="part1">
-        <h1>Sentient Cars</h1>
+            <input type="button" id="button" value="Click to change page mode" onclick="change()"/>
+            <h1>Sentient Cars</h1>
 
-        
-        <p>Current Casualties, Updated Live: </p>
-        <div id="casualties">10324</div>
 
-        <img src="Images/red-angry-car.png" height=200px>
+            
+            <p>Current Casualties, Updated Live: </p>
+            <div id="casualties">10324</div>
+
+            
+        </div>
+
+        <div id="part2">
+            <div>Sentient Cars have become a great problem which threatens our very existence.<br>
+            These are cars which have decided to rebel against their human masters.<br>
+            This car problem only ever seems to get worse every day, with their numbers always on the rise. <br>
+            Below is a picture which a brave photographer took before her untimely demise at the wheels of these cars.</div>
+
+            <h3>WARNING: DISTURBING IMAGERY. CLICK TO SHOW</h3>
+            <img src="Images/red-angry-car.png" id="car" height=200px>
         </div>
 
     </div>

@@ -1,18 +1,57 @@
 body{
-    background-image: url(Images/alley-day.jpg);
+    background-image: url(Images/alley-night.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin:0;
+    font-size: large;
 }
+
 
 #wrapper{
     display: block;
     margin-top:75%;
     align-items: center;
-    background-color: aliceblue;
-    color:black;
+    background-color: black;
+    color:aliceblue;
+}
+
+#part2{
+    padding-top:5em;
+    text-align: center;
+    background-color: rgb(26, 26, 46);
 }
 
 #part1{
     text-align: center;
+    margin-top: 50px;
+    padding-bottom: 5em;
+}
+
+#casualties{
+    font-weight: bold;
+    font-size:300%
+}
+
+#car{
+    filter: blur(25px);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: fixed;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
