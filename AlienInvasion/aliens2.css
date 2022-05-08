@@ -80,3 +80,19 @@ Table styles.
  table tr:last-of-type {
     font-weight: bold;
  }
+
+ /*Adding opacity to h1*/
+
+ .opacity-h1 {
+   
+   color: white;
+   background-color:rgba(0, 0, 0, 0.2);
+
+ }
+
+ .opacity-2 {
+   
+   color: black;
+   background-color:rgba(0, 0, 0, 0.1);
+
+ }
