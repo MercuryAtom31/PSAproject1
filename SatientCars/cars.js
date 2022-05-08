@@ -46,7 +46,7 @@ function change(){
         col.style.color='black';
         col.style.backgroundColor='aliceblue';
 
-        document.getElementById('part2').style.backgroundColor='blanchedalmond';
+        document.getElementById('part2').style.backgroundColor='rgb(198, 198, 255)';
 
         document.body.style.backgroundImage = 'url(Images/alley-day.jpg)';
 
