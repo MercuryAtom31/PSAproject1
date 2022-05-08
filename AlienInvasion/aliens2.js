@@ -24,7 +24,7 @@ function score() {
  * Text appear and disappear script.
  */
 
- function display(idName) {
+function display(idName) {
   let team = document.getElementById(idName);
   team.style.display = "block";
 }
@@ -35,26 +35,90 @@ function hide(idName) {
 }
 
 //Adding the event listeners of each function.
-let el1 = document.getElementById("padres");
+let el1 = document.getElementById("firstAddress");
 el1.addEventListener("mouseover", function () {
-  display("padresID");
+  display("firstAddressID");
 });
 el1.addEventListener("mouseout", function () {
-  hide("padresID");
+  hide("firstAddressID");
 });
 
-let el2 = document.getElementById("yankees");
+let el2 = document.getElementById("secondAddress");
 el2.addEventListener("mouseover", function () {
-  display("yankeesID");
+  display("secondAddressID");
 });
 el2.addEventListener("mouseout", function () {
-  hide("yankeesID");
+  hide("secondAddressID");
 });
 
-let el3 = document.getElementById("redsox");
+let el3 = document.getElementById("thirdAddress");
 el3.addEventListener("mouseover", function () {
-  display("redsoxID");
+  display("thirdAddressID");
 });
 el3.addEventListener("mouseout", function () {
-  hide("redsoxID");
+  hide("thirdAddressID");
 });
+
+/**
+ * Changing text color.
+ */
+
+
+
+
+/**
+ * Video script.
+ */
+
+const btn = document.querySelector(".switch-btn");
+const video = document.querySelector(".video-container");
+
+btn.addEventListener("click", function () {
+  if (!btn.classList.contains("slide")) {
+    btn.classList.add("slide");
+    video.pause();
+  } else {
+    btn.classList.remove("slide");
+    video.play();
+  }
+});
+
+// preloader
+// const preloader = document.querySelector(".preloader");
+
+// window.addEventListener("load", function () {
+//   preloader.classList.add("hide-preloader");
+// });
+
+
+/**
+ * Table script.
+ */
+
+//The 5 percent tax on the selection.
+const tax = 5;
+
+let totalPriceTaxIN = 0;
+
+//Function calculating everything.
+function calculate() {
+  let totalPriceOfSelectedElements = document.getElementsByTagName("input");
+
+  for (let i = 0; i < totalPriceOfSelectedElements.length; i++) {
+    if (totalPriceOfSelectedElements[i].checked) {
+      totalPriceTaxIN += parseFloat(totalPriceOfSelectedElements[i].value) / 100;
+
+      let changingContent = document.getElementsByTagName("td");
+      changingContent[1].textContent = "$" + totalPriceTaxIN.toFixed(2);
+      changingContent[3].textContent = "$" + tax;
+      changingContent[5].textContent = "$" + (totalPriceTaxIN + tax).toFixed(2);
+    }
+  }
+}
+
+
+/**
+ * Contact information script.
+ */
+
+

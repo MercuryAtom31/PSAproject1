@@ -229,61 +229,133 @@
     <section>
 
       <div class="div-section-three">
-        <h1>American League Baseball</h1>
-        <h3>Hover Over a Team's Name to Show Their Roster.</h3>
+        <h2>Evacuation Pick-Up Locations</h2>
+        <h3  class="changecolor">Hover Over an Evacuation Pick-Up Location to show their Address.</h3>
         <nav class="nav">
           <a
             href="#"
-            id="padres"
-            mouseover="displayPadresRoster()"
-            mouseout="displayPadresRoster()"
-            >Padres:</a
+            id="firstAddress">FIRST ADDRESS:</a
           ><br />
     
-          <div class="collapsed" id="padresID">
-            Buddy Baumann, Ryan Buchter, Leonel Campos, Andrew Cashner, Jon Edwards,
-            Robbie Erlin, Tayron Guerrero, Josh Martin, Brandon Maurer, Cory
-            Mazzoni, Luis Perdomo, Drew Pomeranz, Kevin Quackenbush, Colin Rea,
-            Fernando Rodney, Tyson Ross, James Shields, Blake Smith,Josh Torres,
-            Cesar Vargas, Carlos Villanueva, Nick Vincent
+          <div class="collapsed" id="firstAddressID">
+            <p>SERVICE DE POLICE DE LA VILLE DE MONTRÉAL</p>
+            <p>1441, rue Saint-Urbain
+            Montréal (Québec)
+            H2X 2M6</p>
           </div>
     
           <a
             href="#"
-            id="yankees"
-            mouseover="displayYankeesRoster()"
-            mouseout="displayYankeesRoster()"
-            >New York Yankee:</a
+            id="secondAddress">SECOND ADDRESS:</a
           ><br />
     
-          <div class="collapsed" id="yankeesID">
-            Johnny Barbato, Dellin Betances, Vicente Campos, Luis Cessa, Aroldis
-            Chapman, Nathan Eovaldi, Nick Goody, Jacob Lindgren, Andrew Miller,
-            Bryan Mitchell, Ivan Nova, Tyler Olson, James Pazos, Branden Pinder,
-            Michael Pineda, Nick Rumbelow, CC Sabathia, Luis Severino, Chasen
-            Shreve, Masahiro Tanaka, Kirby Yates
+          <div class="collapsed" id="secondAddressID">
+            <p>POLICE STATION OF LONGUEUIL</p>
+            <p>699 Cure-Poirier Boul O, Longueuil QC J4J2J1</p>
           </div>
     
           <a
             href="#"
-            id="redsox"
-            mouseover="displayRedSoxRoster()"
-            mouseout="displayRedSoxRoster()"
-            >Boston Red Sox:</a
+            id="thirdAddress" class="changecolor">THIRD ADDRESS:</a
           >
+
     
-          <div class="collapsed" id="redsoxID">
-            Matt Barnes, Clay Buchholz, Roenis Elias, Edwin Escobar, Heath Hembree,
-            Williams Jerez, Brian Johnson, Joe Kelly, Craig Kimbrel, Tommy Layne,
-            Pat Light, Henry Owens, Rick Porcello, David Price, Noe Ramirez,Eduardo
-            Rodriguez, Robbie Ross, Jr.,Carson Smith, Junichi Tazawa, Koji Uehara,
-            Brandon Workman, Steven Wright
+          <div class="collapsed" id="thirdAddressID">
+            <p>POLICE STATION OF LAVAL</p>
+            <p>5577 Des Laurentides, Laval QC H7K 2K4</p>
           </div>
         </nav>
     
       <div>
 
     </section>
+
+    <!-- 
+      
+      Table html 
+    
+    -->
+
+    <article class="article">
+      <div class="blur-image">
+      <h2>Essential Survival Kit Items You Can’t Live Without</h2>
+      <form>
+         <input type="checkbox" id="item1" value="2999" />
+         <label for="item1">Fire-starter Kit ($29.99)</label>
+         <input type="checkbox" id="item2" value="3999" />
+         <label for="item2">Water Purification Kit ($39.99)</label>
+         <input type="checkbox" id="item3" value="1799" />
+         <label for="item3">First Aid Supplies ($17.99)</label>
+         <input type="checkbox" id="item4" value="10099" />
+         <label for="item4">Signaling Equipment ($100.99)</label>
+         <input type="checkbox" id="item5" value="1499" />
+         <label for="item5">Emergency Thermal Blanket ($14.99)</label>
+         <input type="button" value="Calculate" id="sButton" onClick="calculate()" />
+		 
+      </form>
+      <table>
+         <colgroup>
+            <col class="label" />
+            <col class="amount" />
+         </colgroup>
+         <tbody>
+            <tr>
+               <td>Item total</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td>Tax</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td>Total with tax</td>
+               <td>$0.00</td>
+            </tr>
+         </tbody>
+      </table>
+    </div>
+   </article>
+
+       <!-- 
+      
+      Table html 
+    
+    -->
+
+
+
+
+      <!-- 
+      
+      video html 
+    
+    -->
+
+    <footer>
+    <section class="section-four">
+
+      <!-- <div class="preloader">
+        <img src="preloader.gif" alt="preloader" class="preloader__item" />
+      </div> -->
+
+
+    <video controls muted autoplay loop class="video-container">
+      <source src="Images/ufoInvasion.mp4" type="video/mp4" />
+    </video>
+    <h1>Alien Invasion</h1>
+    <!-- video switch -->
+    <button class="switch-btn">
+      <span>
+        play
+      </span>
+      <span>
+        pause
+      </span>
+      <span class="switch"></span>
+    </button>
+    </section>
+  </footer>
+
  
     <!--Javascript-->
     <script src="aliens.js"></script>

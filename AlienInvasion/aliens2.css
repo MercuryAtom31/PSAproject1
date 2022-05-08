@@ -1,15 +1,82 @@
 
 .section-two {
 
-    background-color: antiquewhite;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(Images/brooke-denevan-alien.jpg);
+    color: white;
+    background-size: cover;
+    
     text-align: center;
     padding: 90px;
 }
 
 .div-section-three {
 
-    background-color:aliceblue;
+    
+    
     text-align: center;
-    padding: 90px;
+    padding: 100px;
     
 }
+
+.collapsed{
+
+    padding: 10px;
+}
+
+/*
+Table styles.
+*/
+
+.blur-image {
+
+    background-image: url(Images/orangeSuitAlien.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: black;
+    padding: 190px;
+    text-align: center;
+    
+}
+
+.article{
+
+    
+   
+    
+    
+
+}
+
+/* main content */
+
+
+
+/* form */
+ 
+ input {
+    float: left;
+    clear: left;
+    margin: 10px;
+ }
+ 
+ label, #sButton {
+    float: left;
+    font-size: 1.4em;
+ }
+ 
+ /* total div */
+
+ 
+
+ 
+ col.label {
+    width: 175px;
+ }
+ 
+ col.amount {
+    width: 100px;
+ }
+ 
+ table tr:last-of-type {
+    font-weight: bold;
+ }
