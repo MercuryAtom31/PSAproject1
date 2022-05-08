@@ -1,5 +1,3 @@
-//test
-let test = 1;
 let sub1 = document.getElementById("subt1");
 sub1.style.textDecoration = "underline";
 
